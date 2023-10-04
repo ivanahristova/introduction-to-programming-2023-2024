@@ -1,2 +1,7 @@
-# introduction-to-programming-2023-2024
-Repository for the seminars for the "Introduction to Programming" course @ the Faculty of Mathematics and Informatics, Sofia University.
+# Семинар СДП, група 8
+
+## :books: Упражнения
+| № | Тема |
+| --- | --- |
+| 1. | Въведение. |
+
