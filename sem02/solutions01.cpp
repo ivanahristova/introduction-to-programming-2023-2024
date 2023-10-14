@@ -29,7 +29,7 @@ int main() {
     bool isPowerOfTwo = (power != 0) && ((power & (power - 1)) == 0);
     std::cout << isPowerOfTwo << std::endl;
 
-    // 3. Какъв е резултатът от изпулнението на ляв шифт (<< n) върху число x?
+    // 3. Какъв е резултатът от изпълнението на ляв шифт (<< n) върху число x?
     int number = 4;
     std::cout << (number << 2) << std::endl;
     number = 5;
