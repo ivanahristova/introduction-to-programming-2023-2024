@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstring>
 
 void example01() {
     int number = 5;
@@ -68,4 +67,19 @@ int main() {
     // a++;
     // --b;
 
+    // int a = 5;
+    // int* ptrToA = &a;
+
+    // NB
+    // int a = 5;
+    // const int * ptr = &a;
+
+    // int * ptr2 = (int*) ptr;
+
+    // (*ptr)++;
+    // (*ptr2)++;
+
+    // std::cout << a;
+
+    // Reference saves space? or not
 }
