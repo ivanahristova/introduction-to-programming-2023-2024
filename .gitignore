@@ -31,3 +31,15 @@
 *.out
 *.app
 
+# Future seminars
+sem08
+sem09
+sem10
+sem11
+sem12
+
+# Unfinished solutions
+sem04
+
+#
+.vscode/
