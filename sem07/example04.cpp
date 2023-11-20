@@ -1,19 +1,15 @@
 #include <iostream>
 #include <iomanip>
 
-int& f(bool b){
-    int i = 5, j = 10;
-
+int& g(bool b){
+    static int i = 5, j = 10;
     std::cout << i << ' ' << j << std::endl;
-
     return b ? i : j;
 }
 
-int& g(bool b){
-    static int i = 5, j = 10;
-
+int& f(bool b){
+    int i = 5, j = 10;
     std::cout << i << ' ' << j << std::endl;
-
     return b ? i : j;
 }
 

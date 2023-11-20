@@ -7,6 +7,6 @@ double f(double d = 6.0){
 }
 
 int main() {
-    std::cout << f() << std::endl;
-    std::cout << f(8) << std::endl;
+    std::cout << f() << std::endl; // 13
+    std::cout << f(8) << std::endl; // 15
 }
