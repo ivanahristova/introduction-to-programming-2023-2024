@@ -10,9 +10,9 @@ int main()
 
     a = b = 0;
     f(true, a, b) = 7;
-    std::cout << a << ' ' << b << std::endl;
+    std::cout << a << ' ' << b << std::endl; // 7 0
 
     a = b = 0;
     f(false, a, b) = 7;
-    std::cout << a << ' ' << b << std::endl;
+    std::cout << a << ' ' << b << std::endl; // 0 7
 }

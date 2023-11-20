@@ -7,6 +7,6 @@ int& getNumber(int b) {
 }
 
 int main() {
-    std::cout << getNumber(10) << std::endl;
-    std::cout << getNumber(11) << std::endl;
+    std::cout << getNumber(10) << std::endl; // 11
+    std::cout << getNumber(11) << std::endl; // 10
 }

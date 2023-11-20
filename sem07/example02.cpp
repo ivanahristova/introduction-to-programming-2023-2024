@@ -1,19 +1,19 @@
 #include <iostream>
 
 void g(){
-    int number = 0;
-    int& ref = number;
-    ref++;
+    int number = 0;  //
+    int& ref = number; //
+    ref++; // 1
     std::cout << number << std::endl;
     std::cout << ref << std::endl;
 
     int* ptr = &ref;
-    (*ptr)++;
+    (*ptr)++; // 2
     std::cout << number  << std::endl;
 
-    ptr++;
+    ptr++; // pointer arithmetic
     std::cout << *ptr << std::endl;
-    ptr--;
+    ptr--; //
     std::cout << *ptr << std::endl;
 }
 
