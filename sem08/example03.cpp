@@ -25,9 +25,9 @@ int main() {
     }
 
     for (int i = 0; i < rows; ++i) {
-        delete[] matrix[i];
+        delete[] matrix[i]; // 1 2 3
     }
-    delete[] matrix;
+    delete[] matrix; // int* int*
 
     return 0;
 }

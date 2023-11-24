@@ -10,8 +10,11 @@ int main() {
     delete p;
     p = nullptr;
 
-    // std::cout << *p << std::endl;
-    std::cout << *q << std::endl;
+    std::cout << *p << std::endl;
+
+    if (p != nullptr) {
+        std::cout << *q << std::endl;
+    }
 
     delete q;
 }
