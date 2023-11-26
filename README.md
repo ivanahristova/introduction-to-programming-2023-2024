@@ -11,3 +11,11 @@
 | 6. | [Многомерни масиви.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem06) |
 | 7. | [Референции. Задачи върху масиви.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem07) |
 | 8. | [Динамична памет.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem08) |
+| 9. | [Низове.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem09) |
+
+## 🔎 Обобщение на материала
+
+Включва основните моменти от теми 1-8
+
+[Cheat sheet](https://docs.google.com/document/d/18FmJnNG3lE6UAssn0Aaf7Lr4aB7bSkR7tEoVyIl9itg/edit?usp=sharing)
+
