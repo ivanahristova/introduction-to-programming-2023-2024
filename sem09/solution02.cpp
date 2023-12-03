@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 bool isSmallLatinLetter(char ch) {
 	return ch >= 'a' && ch <= 'z';
@@ -6,7 +7,7 @@ bool isSmallLatinLetter(char ch) {
 
 void capitalize(char* str) {
 	int diff = 'A' - 'a';
-	for (int i = 0; str[i] != '\0'; i++) {
+	for (size_t i = 0; str[i] != '\0'; i++) {
 		if (isSmallLatinLetter(str[i])) {
             str[i] += diff; // str[i] = str[i] + diff;
         }
@@ -16,11 +17,10 @@ void capitalize(char* str) {
 int main() {
     unsigned int length;
     std::cin >> length;
-
     std::cin.ignore();
 
     char* text = new char[length + 1];
-    std::cin.getline(text, length);
+    std::cin.getline(text, length + 1);
 
     capitalize(text);
 

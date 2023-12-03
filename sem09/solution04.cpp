@@ -20,7 +20,7 @@ int numbersCount(const char* str) {
 
 int main() {
 	char* str = new char[101];
-	std::cin >> str;
+	std::cin >> str; // TODO: replace with getline
 
 	std::cout << numbersCount(str);
 
