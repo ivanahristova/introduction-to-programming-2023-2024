@@ -32,9 +32,11 @@
 *.app
 
 # Future seminars
-sem10
 sem11
 sem12
+sem13
+sem14
+sem15
 
 # Unfinished solutions
 sem04
