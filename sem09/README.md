@@ -17,7 +17,7 @@ char a []= {'d', 'r', 'e', 'a', '\0', 'o'}; // символният низ е "d
 
 ## Декларация и инициализация
 
-[Пример](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem09/example02.cpp)
+[Пример](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem09/examples01.cpp)
 ```cpp
     char str[] = {'H', 'e', 'l', 'l', 'o', '\0'}; // добавянето на '\0' определя края на символния низ -> дължината му може да бъде изчислена
     char str1[5] = {'a', 'b', '\0', '\0', '\0'};
@@ -28,7 +28,6 @@ char a []= {'d', 'r', 'e', 'a', '\0', 'o'}; // символният низ е "d
     char str6[5] = "Hello"; // невалидно - "" добавят '\0'
 ```
 
-[Пример](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem09/example03.cpp)
 ```cpp
     char str1[] = "Hello"; // автоматично определя големината според дължината на низа
     const char* str2 = "Hello"; // указател към константен низ
@@ -40,7 +39,7 @@ char a []= {'d', 'r', 'e', 'a', '\0', 'o'}; // символният низ е "d
 
 **Четене от стандартния вход**
 
-[Пример](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem09/example04.cpp)
+[Пример](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem09/examples02.cpp)
 ```cpp
     const int MAX = 100;
     char str[MAX];
