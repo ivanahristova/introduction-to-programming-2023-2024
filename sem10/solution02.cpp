@@ -25,11 +25,36 @@ int** createMatrix(size_t rows, size_t cols) {
     return matrix;
 }
 
+void reverseMatrix(int** original, int** reversed, size_t rows, size_t cols) {
+    for (size_t i = 0; i < rows; i++) {
+        for (size_t j = 0; j < cols; j++) {
+            // std::cout << original[rows - 1 - i][cols - 1 - j];
+            reversed[i][j] = original[rows - 1 - i][cols - 1 - j];
+        }
+    }
+}
+
+void freeMatrix(int** matrix, size_t rows) {
+    for (size_t i = 0; i < rows; i++) {
+        delete[] matrix[i];
+    }
+    delete[] matrix;
+}
 
 int main() {
     size_t rows = 5, cols = 5;
     int** matrix = createMatrix(rows, cols);
     printMatrix(matrix, rows, cols);
 
+    int** reversed = new int*[rows];
+    for (size_t i = 0; i < rows; i++) {
+        reversed[i] = new int[cols];
+    }
 
+    reverseMatrix(matrix, reversed, rows, cols);
+
+    printMatrix(reversed, rows, cols);
+
+    freeMatrix(matrix, rows);
+    freeMatrix(matrix, rows);
 }
