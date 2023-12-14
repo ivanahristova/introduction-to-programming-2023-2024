@@ -13,6 +13,7 @@
 | 8. | [Динамична памет.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem08) |
 | 9. | [Низове.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem09) |
 | 10. | [Подготовка за контролно.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem10) |
+| 11. | [Рекурсия.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem11) |
 
 ## 🔎 Обобщение на материала
 
