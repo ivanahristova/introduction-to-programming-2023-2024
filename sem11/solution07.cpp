@@ -12,11 +12,17 @@ void printBackwardsIter(int number) {
 }
 
 // Рекурсивен вариант
-// TODO:
-//
+void printBackwardsRec(int number) {
+    if (number > 0) {
+        short digit = number % 10;
+        std::cout << digit;
+        printBackwardsRec(number / 10);
+    }
+}
 
 int main() {
     int number = 456789;
     printBackwardsIter(number);
     std::cout << std::endl;
+    printBackwardsRec(number);
 }

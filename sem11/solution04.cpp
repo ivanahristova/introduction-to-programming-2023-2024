@@ -14,10 +14,19 @@ long prodDigitsIter(int number) {
 }
 
 // Рекурсивен вариант
-// TODO:
-//
+long prodDigitsRec(int number) {
+    if (number == 0) {
+        return 1;
+    }
+
+    int digit = number % 10;
+    long product = prodDigitsRec(number / 10);
+    return product * digit;
+}
+
 
 int main() {
     int num = 12345;
     std::cout << prodDigitsIter(num) << ' ';
+    std::cout << prodDigitsRec(num) << ' ';
 }

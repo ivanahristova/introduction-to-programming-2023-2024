@@ -13,8 +13,19 @@ int sumDigitsIter(int n) {
 }
 
 // Рекурсивен вариант
-// TODO:
-//
+int sumDigitsRec(int n) {
+    if (n < 10) {
+        return n;
+    }
+
+    int lastDigit = n % 10;
+    int sumRestDigits = sumDigitsRec(n / 10);
+
+    return lastDigit + sumRestDigits;
+}
+
+// Опашкова рекурсия
+// TODO: HW
 
 int main() {
     int n = 54879;
