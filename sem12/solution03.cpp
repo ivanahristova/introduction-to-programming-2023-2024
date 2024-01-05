@@ -23,8 +23,24 @@ bool binarySearchIter(const int arr[], int size, int X) {
 }
 
 // Рекурсивен вариант
-// TODO:
+bool binarySearchRec(const int arr[], int left, int right, int X) {
+    if (left > right) {
+        return false;
+    }
 
+    int mid = left + (right - left) / 2;
+    if (arr[mid] == X) {
+        return true;
+    }
+    if (arr[mid] > X) {
+        return binarySearchRec(arr, left, mid - 1, X);
+    }
+    if (arr[mid] < X) {
+        return binarySearchRec(arr, mid + 1, right, X);
+    }
+
+    return false;
+}
 
 int main() {
     int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
