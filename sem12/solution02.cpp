@@ -14,6 +14,13 @@ bool isIncreasingSequenceIter(int arr[], int n) {
 
 // Рекурсивен вариант
 // TODO:
+bool isIncreasingSequenceRec(int arr[], int n) {
+    if (n <= 1) {
+        return true;
+    }
+
+    return arr[0] < arr[1] && isIncreasingSequenceRec(arr + 1, n - 1);
+}
 
 int main() {
     int array[] = {1, 2, 4, 6, 9};

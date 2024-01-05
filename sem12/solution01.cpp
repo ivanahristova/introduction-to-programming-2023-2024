@@ -14,6 +14,13 @@ bool findElementIter(int arr[], int n, int x) {
 
 // Рекурсивен вариант
 // TODO:
+bool findElementRec(int arr[], int n, int x) {
+    if (n == 0) {
+        return false;
+    }
+
+    return arr[0] == x || findElementRec(arr + 1, n - 1, x);
+}
 
 int main() {
     int array[] = {1, 2, 3, 4, 5};
