@@ -32,13 +32,13 @@
 *.app
 
 # Future seminars
-sem13
 sem14
 sem15
 
 # Unfinished solutions
 sem04
 up
+k3
 
 #
 .vscode/
