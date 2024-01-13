@@ -1,4 +1,4 @@
-# Преговор част 1. Анализ на алгоритъм. Сортиране.
+# Преговор част 1. Анализ на алгоритъм. Базови алгоритми за сортиране.
 
 ## Преговор част 1
 
@@ -102,31 +102,12 @@ https://docs.google.com/document/d/1XP9VW4dZ6l5NyaxF_45zcOBtCOR9UgQZzVXpUd_OQ3A/
 2. По-ефикасен от предните два квадратични алгоритъма
 3. Може да сортира масив с приемането му
 
-**1. Merge sort**
-
-Алгоритъмът се базира на подхода **разделяй и владей**. \
-Идея: Разделя масива на две равни части и обединява двата сортирани подмасива. \
-База: Масив с един елемент е винаги сортиран.
-
-![Merge function](https://github.com/IvanaHristova/introduction-to-programming-2023-2024/tree/main/sem13/images/merge-function.png)
-
-Merge обединява двата вече сортирани масива в един общ.
-
-Визуализация на merge sort по стъпки.
-
-![Merge sort steps](https://github.com/IvanaHristova/introduction-to-programming-2023-2024/tree/main/sem13/images/merge-sort-steps.png)
-
-Ползва допълнителна памет. \
-Сложността на рекурсивните алгоритми се определя като се сметне тяхното рекуренто уравнение. \
-Рекурентно уравнение на Merge Sort:
-T(n) = 2*T(n/2) + O(n)
-
 **4. Анализ**
 
-| \* | Bubble sort | Selection sort | Insertion sort | Merge sort |
-| --- | --- | --- | --- | --- |
-| BC | *O(n)* | *O(n^2)* | *O(n)* | *O(nlogn)* |
-| AC | *O(n^2)* | *O(n^2)* | *O(n^2)* | *O(nlogn)* |
-| WC | *O(n^2)*  | *O(n^2)* | *O(n^2)* | *O(nlogn)* |
-| Memory | *O(1)* | *O(1)* | *O(1)* | *O(n)* |
-| Stability | :heavy_check_mark: | ❌ | :heavy_check_mark: | :heavy_check_mark: |
+| \* | Bubble sort | Selection sort | Insertion sort |
+| --- | --- | --- | --- |
+| BC | *O(n)* | *O(n^2)* | *O(n)* |
+| AC | *O(n^2)* | *O(n^2)* | *O(n^2)* |
+| WC | *O(n^2)*  | *O(n^2)* | *O(n^2)* |
+| Memory | *O(1)* | *O(1)* | *O(1)* |
+| Stability | :heavy_check_mark: | ❌ | :heavy_check_mark: |

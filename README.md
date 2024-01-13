@@ -15,6 +15,7 @@
 | 10. | [Подготовка за контролно.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem10) |
 | 11. | [Рекурсия I.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem11) |
 | 12. | [Рекурсия II. Backtracking.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem12) |
+| 13. | [Преговор част 1. Анализ на алгоритъм. Базови алгоритми за сортиране.](https://github.com/ivanahristova/introduction-to-programming-2023-2024/tree/main/sem13) |
 
 ## 🔎 Обобщение на материала
 

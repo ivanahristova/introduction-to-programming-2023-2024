@@ -1,11 +1,15 @@
 #include <iostream>
 #include <cstring>
 
+// Time complexity: O(1)
+// Space complexity: O(1)
 double sum_two_double_numbers(double num1, double num2) {
     double sum = num1 + num2;
     return sum;
 }
 
+// Time complexity: O(n)
+// Space complexity: O(1)
 int sum_first_n_numbers(int n) {
     int sum = 0;
     for (int i = 1; i <= n; i++) {
@@ -14,22 +18,33 @@ int sum_first_n_numbers(int n) {
     return sum;
 }
 
+// Time complexity: O(1)
+// Space complexity: O(1)
 int sum_first_n_numbers_const(int n) {
     return (n * (n + 1)) / 2;
 }
 
+// Time complexity: O(1)
+// Space complexity: O(1)
 double sum_first_and_last_element(const double arr[], int n) {
     return arr[0] + arr[n - 1];
 }
 
+// броя на елементите в масива определя големината големината на входа
+// Time complexity: O(n)
+// Space complexity: O(1)
 double sum_of_array(const double arr[], int n) {
-    int sum = 0;
-    for (int i = 0; i < n; i++) {
+    int sum = 0; // +1 (space)
+    for (int i = 0; i < n; i++) { // +1 (space);
         sum += arr[i];
     }
-    return sum;
+    // +n (time)
+
+    return sum; // +1 (time)
 }
 
+// Time complexity: O(n)
+// Space complexity: O(1)
 void find_odd_and_even_sum(int* arr, int n, int &odd_sum, int &even_sum) {
     for (int i = 0; i < n; i++) {
         if (i % 2 != 0) {
@@ -40,7 +55,10 @@ void find_odd_and_even_sum(int* arr, int n, int &odd_sum, int &even_sum) {
     }
 }
 
+// Time complexity: O(log(n))
+// Space complexity: O(1)
 double sum_array_elements(const double arr[], int n) {
+// 1 -> 2 -> 4 -> 8 -> 16... // 2^0 -> 2^1 -> 2^2 -> ... -> 2^(log_2(n))
     int sum = 0;
     for (int i = 1; i < n; i *= 2) {
         sum += arr[i];
@@ -48,15 +66,26 @@ double sum_array_elements(const double arr[], int n) {
     return sum;
 }
 
+// 1/2*n
+
+// BC: O(1) -> първи елемент
+// AC: O(n/2) -> O(n) -> някъде по средата
+// WC: O(n) -> последен елемент
 bool linear_search(const int arr[], int n, int element) {
     for (int i = 0; i < n; i++) {
         if (arr[i] == element) {
             return true;
         }
     }
+
     return false;
 }
 
+// Time complexity:
+// B.C.: O(1)
+// A.C.: O(log(n))
+// W.C.: O(log(n))
+// Space complexity: O(1)
 int binary_search(int sorted_array[], int n, int element) {
     int start = 0;
     int end = n - 1;
@@ -78,8 +107,11 @@ int binary_search(int sorted_array[], int n, int element) {
     return -1;
 }
 
-// По-сложни примери
-
+// Time complexity:
+// B.C.: O(1)
+// A.C.: O(log(n))
+// W.C.: O(log(n))
+// Space complexity: O(log(n))
 int binary_search_recursive(int* arr, int start, int end, int element) {
     if (start > end) {
         return -1;
@@ -103,11 +135,9 @@ int binary_search_recursive(int* arr, int start, int end, int element) {
 // A.C.: O(log(n))
 // W.C.: O(log(n))
 // Space complexity: O(1)
-int sum_powers_of_two_until_n(int n)
-{
+int sum_powers_of_two_until_n(int n) {
     int res = 0;
-    for (int i = 1; i <= n; i *= 2)
-    {
+    for (int i = 1; i <= n; i *= 2) {
         res += i;
     }
     return res;
